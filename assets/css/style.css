@@ -14,6 +14,13 @@ body {
     animation-name: body;
     animation-duration: 4s;
 }
+
+.custom-edwin{
+    background-color: #F3EA5D;
+    color: #4D49BE;
+    font-size: 2em;
+}
+
 .logo-max{
     border-radius: 75px;
     animation-name: image;
