@@ -14,20 +14,23 @@ body {
     animation-name: body;
     animation-duration: 4s;
 }
-.logo-max{
-    border-radius: 75px;
-    animation-name: image;
-    animation-duration: 4s;
-    animation: image 2000ms ease-in-out forwards;
-    width: 150px;
-}
+
 img{
-    width: 150px;
+    width: 100px;
 }
 h1{
     color: #F277C6;
     margin: 10px;
     
+}
+
+@media (min-width: 576px){
+    h2{
+        margin: 5px;
+        color: #F277C6;
+        font-size: large;
+        text-decoration: underline;
+    }
 }
 h2{
     margin: 10px;
@@ -39,17 +42,17 @@ h3{
     color: #4D49BE;
 }
 
-p:hover {
+.seccion p:hover {
     background-color: #0099cc;
     color: #F277C6;
     border-radius: 15px;
   }
-li:hover {
+.seccion li:hover {
     background-color: #0099cc;
     color: #F277C6;
     border-radius: 15px;
   }
-.seccion{
+.seccion, nav{
     background-color: #F3EA5D;
     margin: 10px;
     /*padding: 100px;*/
@@ -57,10 +60,18 @@ li:hover {
     border-radius: 25px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+.navbar{
+    background-color: #0099cc !important;
+}
+.navbar-toggler{
+    margin: 5px;
+}
 table{
     background-color: #F3EA5D;
+    width: 80%;
 }
 table, th, td {
+    text-align: center;
     border: 5px solid #F277C6;
     margin: 10px;
     padding: 10px;
@@ -68,13 +79,33 @@ table, th, td {
 
 @keyframes body {
     0%   {background-color: #05C3DD;}
-    25%  {background-color: #F3EA5D;}
+    25%  {background-color: hsl(56, 86%, 66%);}
     50%  {background-color: #F277C6;}
     100% {background-color: #4D49BE;}
   }
+
+  .logo-max{
+    border-radius: 75px;
+    animation-name: image;
+    animation-duration: 4s;
+    animation: image 2000ms ease-in-out forwards;
+    width: 100px;
+}
 
   @keyframes image {
     
     to{ transform: scale(1.5); }
 
   }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #F277C6;
+    border: 5px solid #4D49BE;
+}
